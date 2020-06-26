@@ -1,0 +1,51 @@
+{
+    "name": "dazzlesoftware/database",
+    "type": "library",
+    "description": "Dazzle Database Package",
+    "keywords": ["dazzle", "framework", "database"],
+    "homepage": "https://github.com/dazzle-framework/database",
+    "license": "GPL-3.0-or-later",
+    "require": {
+       "php": "^7.3.0",
+        "dazzlesoftware/event": "^1.0"
+    },
+    "require-dev": {
+        "dazzlesoftware/archive": "^1.0",
+        "dazzlesoftware/dazzle-coding-standard": "^1.0",
+        "dazzlesoftware/console": "^1.0",
+        "dazzlesoftware/di": "^1.0",
+        "dazzlesoftware/filesystem": "^1.0",
+        "dazzlesoftware/registry": "^1.0",
+        "dazzlesoftware/test": "^1.0",
+        "phpunit/phpunit": "^9.0",
+        "psr/log": "^1.1",
+        "symfony/phpunit-bridge": "^4.4|^5.0"
+    },
+    "suggest": {
+        "dazzlesoftware/archive": "To use the ExportCommand class, install dazzlesoftware/archive",
+        "dazzlesoftware/console": "To use the ExportCommand and ImportCommand classes, install dazzlesoftware/console",
+        "dazzlesoftware/di": "To use the Database ServiceProviderInterface objects, install dazzlesoftware/di.",
+        "dazzlesoftware/filesystem": "To use the ExportCommand and ImportCommand classes, install dazzlesoftware/filesystem",
+        "dazzlesoftware/registry": "To use the Database ServiceProviderInterface objects, install dazzlesoftware/registry.",
+        "psr/log": "To use the LoggingMonitor, install psr/log.",
+        "ext-mysqli": "To connect to a MySQL database via MySQLi",
+        "ext-pdo": "To connect to a MySQL, PostgreSQL, or SQLite database via PDO",
+        "ext-sqlsrv": "To connect to a SQL Server database"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dazzle\\Database\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dazzle\\Database\\UnitTests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-2.0-dev": "2.0-dev"
+        }
+    }
+}
